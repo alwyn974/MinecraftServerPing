@@ -15,7 +15,7 @@ Minecraft Server Ping est basé principalement sur le travail de [zh32](https://
 
 ### Configuration
 
-Il y a actuellement 2 version du ping, la version ``1.7.X_HIGHER`` et la ``1.9.x_HIGHER``<br>
+Il y a actuellement 2 version du ping, la version ``1.7.X_HIGHER`` et la ``1.9.X_HIGHER``<br>
 Vous devez utiliser la classe ``MinecraftServerPingOptions`` les options disponibles sont : <br>
 <ul>
 <li> <code>String</code> hostname (hostname du serveur, <b>obligatoire</b>)
