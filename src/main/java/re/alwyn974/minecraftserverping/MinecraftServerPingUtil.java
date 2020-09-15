@@ -1,31 +1,44 @@
+/**
+ * Copyright Alwyn974 2019-2020
+ * 
+ * @author Developed By <a href="https://github.com/alwyn974"> Alwyn974</a>
+ */
+
 package re.alwyn974.minecraftserverping;
 
 import java.io.DataInputStream;
 import java.io.DataOutputStream;
 import java.io.IOException;
+import java.util.regex.Pattern;
 
 /**
  * Utils functions for Minecraft Server Ping
  * 
  * @author <a href="https://github.com/alwyn974"> Alwyn974 </a>
  * @since 1.0.0
- * @version 1.0.0
+ * @version 2.0.0
  */
 public class MinecraftServerPingUtil {
 	
 	public static byte PACKET_HANDSHAKE = 0x00, PACKET_STATUSREQUEST = 0x00, PACKET_PING = 0x01;
     public static int PROTOCOL_VERSION = 4;
     public static int STATUS_HANDSHAKE = 1;
+    
+    private static final Pattern STRIP_EXTRAS_PATTERN = Pattern.compile("(?i)§[0-9A-FK-OR]");
+    
+    public static String removeExtraCode(final String motd) {
+    	return STRIP_EXTRAS_PATTERN.matcher(motd).replaceAll("");
+    }
 	
-	public static void validate(final Object o, final String m) {
-        if (o == null) {
-            throw new RuntimeException(m);
+	public static void validate(final Object object, final String error) {
+        if (object == null) {
+            throw new RuntimeException(error);
         }
     }
 
-    public static void io(final boolean b, final String m) throws IOException {
-        if (b) {
-            throw new IOException(m);
+    public static void io(final boolean condition, final String error) throws IOException {
+        if (condition) {
+            throw new IOException(error);
         }
     }
 

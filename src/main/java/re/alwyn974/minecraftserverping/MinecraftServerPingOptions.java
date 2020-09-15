@@ -1,3 +1,9 @@
+/**
+ * Copyright Alwyn974 2019-2020
+ * 
+ * @author Developed By <a href="https://github.com/alwyn974"> Alwyn974</a>
+ */
+
 package re.alwyn974.minecraftserverping;
 
 /**
