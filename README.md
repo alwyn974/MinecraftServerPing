@@ -38,3 +38,27 @@ Vous devez utiliser la classe ``MinecraftServerPingOptions`` les options disponi
 MinecraftServerPingInfos data = new MinecraftServerPing().getPing(new MinecraftServerPingOptions().setHostname("play.hypixel.net").setPort(25565));
 System.out.println(data.getDescription() + "\n" + data.getStrippedDescription() + "\n" + data.getVersion().getName() + "\n" + data.getLatency() + "ms\n" + data.getPlayers().getOnline() + "/" + data.getPlayers().getMax());
 ```
+
+## Documentation
+
+Vous pouvez aller voir la javadoc qui se trouve [ici](https://alwyn974.github.io/javadoc/minecraftserverping/). <br>
+Un exemple est disponible [ici](https://github.com/alwyn974/MinecraftServerPing/blob/master/src/test/java/re/alwyn974/test/minecraftserverping/Main.java).
+
+## Installation
+
+Remplacez `%VERSION%` avec les versions disponibles (1.0.0 & 2.0.0)
+
+### Gradle
+
+```gradle
+repositories {
+    mavenCentral() 
+    maven {
+        url "https://alwyn974.github.io/maven/"
+    }
+}
+
+dependencies {
+    compile 're.alwyn974.minecraftserverping:MinecraftServerPing:%VERSION%'
+}
+```
