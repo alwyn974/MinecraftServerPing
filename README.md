@@ -1,7 +1,7 @@
 <div align="center">
     <h1>Minecraft Server Ping</h1>
 
-![](https://img.shields.io/badge/Available%20for-1.7.10--1.16.X-brightgreen.svg?style=for-the-badge)
+![](https://img.shields.io/badge/Available%20for-1.7.10--1.17.X-brightgreen.svg?style=for-the-badge)
 [![](https://img.shields.io/github/downloads/alwyn974/MinecraftServerPing/v1.0.0/total?color=brightgreen&logo=github&style=for-the-badge)](https://github.com/alwyn974/MinecraftServerPing/releases)
 [![](https://img.shields.io/github/downloads/alwyn974/MinecraftServerPing/v2.0.0/total?color=brightgreen&logo=github&style=for-the-badge)](https://github.com/alwyn974/MinecraftServerPing/releases)
 [![](https://img.shields.io/badge/License-GPL--3.0-brightgreen.svg?style=for-the-badge)](https://github.com/alwyn974/MinecraftServerPing/blob/v2/LICENSE)
